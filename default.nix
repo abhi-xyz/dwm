@@ -8,10 +8,18 @@ pkgs.stdenv.mkDerivation {
 
   src = pkgs.lib.cleanSource ./.;
 
-  buildInputs = [
-    pkgs.xorg.libX11
-    pkgs.xorg.libXft
-    pkgs.xorg.libXinerama
+  # nativeBuildInputs are tools needed on the host to compile the program
+  nativeBuildInputs = with pkgs; [
+    pkg-config 
+  ];
+
+  # buildInputs are the libraries the program links against
+  buildInputs = with pkgs; [
+    xorg.libX11
+    xorg.libXft
+    xorg.libXinerama
+    pango        
+    glib         # Pango usually requires glib
   ];
 
   postUnpack =
