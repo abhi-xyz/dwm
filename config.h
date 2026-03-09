@@ -12,7 +12,7 @@ static const int showbar = 1; /* 0 means no bar */
 static const int topbar = 1;  /* 0 means bottom bar */
 static const int user_bh = 9; /* 2 is the default spacing around the bar's font */
 // static const char font[] = "Fira Nerd Font Mono 10";
-static const char font[] = "Fira Nerd Font Mono 10, Symbols Nerd Font 10, Mono Bold 10";
+static const char font[] = "IosevkaTerm Nerd Font 10, Fira Nerd Font Mono 10, Symbols Nerd Font 10, Mono Bold 10";
 static const char dmenufont[] = "monospace:size=10";
 static const char col_gray1[] = "#222222";
 static const char col_gray2[] = "#444444";
